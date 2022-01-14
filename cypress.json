@@ -1,0 +1,29 @@
+{
+    "baseUrl": "http://peach-borrower.peach-dev.finance/login",
+    "ignoreTestFiles": "**/examples/*",
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "testFiles": [
+      "01_login_test.js",
+      "02_wronglogin_test.js",
+      "03_paymentmethods_test.js",
+      "04_loanpayment_test.js",
+      "05_newpaymentmethod_test.js",
+      "06_autopayedit_test.js", 
+      "07_changepaymentduedate_test.js",
+      "08_getpayoffstatement_test.js",
+      "09_loanstatementsdoc_test.js",
+      "10_loansummary_test.js"
+    ],
+    
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "reportFilename": "mochawesome_0"
+
+      }
+
+}
